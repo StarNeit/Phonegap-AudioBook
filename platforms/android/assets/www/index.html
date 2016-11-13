@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Hello World</title>
+
+        <script src="js/constants.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/side_menu.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <style>
+            .screen_view1{
+                background-image: url('img/screen.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100%;
+            }
+            .screen_view1 .btn_get_start{
+                position: absolute;
+                right:10%;
+                width: 10%;
+                top: 18%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Landing Page -->
+        <div class="screen_view1" data-role="page" id="screen_view1">
+            <a href="#screen_view2"><img class="btn_get_start" src="img/btn_get_start.png"/></a>
+        </div>
+
+
+        <!-- Player Page -->
+        <div class="screen_view2" data-role="page" id="screen_view2">
+            <!-- Left Side Bar -->
+            <div class="side-bar">
+                <div class='infinite-carousel'>
+                    <img src="img/up.png" class='pre carousel-control'>
+                    <div class="middle">
+                        <div class="viewport">
+                            <div class='list'>
+
+                            </div>
+                        </div>
+                    </div>
+                    <img src="img/down.png" class='next carousel-control'>
+                </div>
+            </div>
+
+            <!-- Music Player Section -->
+            <div class="main-section">
+                <!-- Caset Section -->
+                <div class="caset-section">
+                    <div class="caset">
+                        <div class="caset-image">
+                            <img src="img/player.png">
+                            <img class="wheel left" src="img/wheel.png">
+                            <img class="wheel right" src="img/wheel.png">
+                        </div>
+                        <div class="caset-border"></div>
+                    </div>
+                </div>
+
+                <!-- Player Buttons Controls -->
+                <div class="menu-buttons">
+                    <img class="control-btn" src="img/stop.png" id="btn_stop"/>
+                    <img class="control-btn" src="img/play.png" id="btn_play"/>
+                    <img class="control-btn" src="img/resume.png" id="btn_resume"/>
+                    <img class="control-btn" src="img/btn_en.png" id="btn_lang"/>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Variables -->
+        <div id="variables" style="display:none;">
+        </div>
+        <div id="variables2" style="display:none;">
+            <!-- 
+                0: english
+                1: chinese 
+            -->
+            <input type="hidden" id="lang_mode" value="0"/>
+            
+            <!-- Selected Music Url -->
+            <input type="hidden" id="selected_file_id" value="0" />
+        </div>
+
+
+        <!-- Loading Icon -->
+        <div class="loader" style="display:none;"></div>
+
+
+        <!-- Script -->
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script src='js/infiniteCarousel.js'></script>
+        <script src='js/custom.js'></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        </body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.masterteam.audiobook"
+        }
+    }
+}
